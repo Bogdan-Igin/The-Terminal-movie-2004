@@ -32,7 +32,7 @@
     gap: 4.8rem;
   }
 
-  .step-description {
+  .step-text {
     font-size: 1.7rem;
   }
 
@@ -61,6 +61,10 @@
     text-align: center;
   }
 
+  .hero-text-box span:nth-child(6) {
+    margin-right: 0;
+  }
+
   .hero-img {
     width: 50%;
   }
@@ -74,12 +78,12 @@
     text-align: center;
   }
 
-  .box-steps-plot {
+  .steps-plot {
     grid-template-columns: 1fr;
     row-gap: 4.8rem;
   }
 
-  .box-steps-plot .step-img-box:nth-child(3) {
+  .steps-plot .step-img-box:nth-child(3) {
     grid-row: 4 / 5;
   }
 
@@ -88,8 +92,8 @@
   }
 
   .profile-card {
-    min-width: 276px;
-    max-height: 362px;
+    width: 276px;
+    height: 356px;
   }
 
   .prototype-description {
@@ -206,30 +210,248 @@
     padding: 8rem 0;
   }
 
-  .grid-1 {
+  .box-prototype {
     grid-template-columns: 1fr;
     gap: 6.4rem;
   }
 
   .profile-card {
     width: 50%;
-    max-height: none;
+    height: auto;
     transform: none;
     justify-self: center;
-    min-width: 300px;
+    min-width: 260px;
   }
-}
 
-/* BELOW 544px */
+  .section-features {
+    padding: 8rem 0;
+  }
 
-@media (max-width: 34em) {
   .features {
     flex-direction: column;
     justify-content: center;
+    gap: 4.8rem;
   }
 
   .card-features {
     max-width: none;
     min-width: 232px;
+  }
+
+  .section-trailer {
+    padding: 8rem 0;
+  }
+
+  .section-feedback {
+    background-image: url(../img/the-terminal-movie-feadback-w704px.webp);
+    background-size: cover;
+    background-position: top;
+    padding: 8rem 0;
+  }
+
+  .section-feedback .heading-secondary {
+    width: 295px;
+  }
+
+  .feedback-form {
+    width: 100%;
+  }
+
+  .section-feedback p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .feedback-form label {
+    color: #fff;
+  }
+
+  .footer {
+    margin-top: 8rem;
+  }
+
+  .footer .container-1200 {
+    gap: 8rem;
+  }
+}
+
+/* BELOW 544px till w-320px & h-568px (Apple iPhone 5, SE 1-st ed)*/
+
+@media (max-width: 34em) {
+  .section-hero {
+    padding: 3.2rem 0 6.4rem 0;
+  }
+
+  .hero {
+    gap: 3.2rem;
+  }
+
+  .hero-tagline {
+    margin-bottom: 1.6rem;
+  }
+
+  .heading-primary {
+    font-size: 6.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-text-box span:nth-child(n + 3) {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 2.4rem;
+    margin-top: 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .section-persons {
+    padding: 6.4rem 0;
+  }
+
+  .subheading {
+    font-size: 1.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .names-persons {
+    grid-template-columns: 1fr;
+  }
+
+  .name-persons {
+    width: 60%;
+    padding: 1rem 1rem;
+  }
+
+  .name-persons:first-child {
+    justify-self: left;
+  }
+
+  .name-persons:nth-child(2) {
+    justify-self: center;
+  }
+
+  .name-persons:last-child {
+    justify-self: right;
+  }
+
+  .section-plot {
+    padding: 6.4rem 0;
+  }
+
+  .steps-plot {
+    padding: 0;
+  }
+
+  .step-text-box span {
+    display: none;
+  }
+
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+
+  .step-text {
+    font-size: 1.6rem;
+  }
+
+  .step-img {
+    width: 85%;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 7.4rem !important;
+    height: 7.4rem !important;
+    border: 2px solid #333;
+    top: unset;
+    bottom: -9rem;
+  }
+
+  .carousel-control-next {
+    transform: translate(-70%, 0);
+  }
+
+  .carousel-control-prev {
+    transform: translate(70%, 0);
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  .section-gallery {
+    padding: 8rem 0 14.4rem 0;
+  }
+
+  .carousel-control-next:focus,
+  .carousel-control-prev:focus {
+    box-shadow: 0 0 0 0.5rem #ffca82;
+  }
+
+  .section-feedback {
+    background-image: linear-gradient(
+        rgba(121, 40, 31, 0.8),
+        rgba(121, 40, 31, 0.8)
+      ),
+      url(../img/the-terminal-movie-feadback-w544px.webp);
+    background-position: center;
+  }
+
+  .section-feedback .heading-secondary,
+  .section-feedback .subheading {
+    text-align: center;
+  }
+
+  .section-feedback .heading-secondary,
+  .section-feedback p {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-feedback p:nth-child(4) {
+    margin-bottom: 3.2rem;
+  }
+
+  .feedback-form {
+    grid-template-columns: 1fr;
+    width: 85%;
+    margin: auto;
+  }
+
+  .feedback-form div:last-child {
+    grid-column: initial;
+    grid-row: initial;
+  }
+
+  .footer {
+    padding: 9.6rem 0;
+  }
+
+  .footer .container-1200 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.8rem;
+    padding: 0 4.8rem;
+  }
+
+  .logos-footer {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .links-extra-info {
+    justify-self: center;
   }
 }

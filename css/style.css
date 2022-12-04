@@ -80,25 +80,6 @@ body {
   margin: 0 auto;
 }
 
-.grid {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-}
-
-.grid-1 {
-  display: grid;
-  column-gap: 3.2rem;
-}
-
-.grid-2-cols-1-1 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-2-cols-1-2 {
-  grid-template-columns: 1fr 2fr;
-}
-
 .heading-primary {
   font-size: 9.8rem;
   font-weight: 300;
@@ -136,13 +117,6 @@ body {
   letter-spacing: 1.3px;
 }
 
-.step-description {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  letter-spacing: 0.6px;
-  color: #555;
-}
-
 /* GENERAL correction bootstrap */
 /* img,
 svg {
@@ -152,11 +126,6 @@ svg {
 /* GENERAL focus */
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.3rem #ffca82;
-}
-
-.carousel-control-next:focus,
-.carousel-control-prev:focus {
   box-shadow: 0 0 0 0.3rem #ffca82;
 }
 
@@ -288,7 +257,7 @@ a {
   margin-bottom: 3.2rem;
 }
 
-.hero-text-box span:nth-child(n + 2) {
+.hero-text-box span:nth-child(n + 3) {
   font-size: 2rem;
   letter-spacing: 0.31rem;
   color: #333;
@@ -378,7 +347,11 @@ a {
   text-align: center;
 }
 
-.box-steps-plot {
+.steps-plot {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
   padding: 0 3.2rem;
 }
 
@@ -388,6 +361,13 @@ a {
   font-weight: 700;
   color: #ff9505;
   margin-right: 0.8rem;
+}
+
+.step-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  color: #555;
 }
 
 .step-img-box {
@@ -409,6 +389,12 @@ a {
 .section-prototype {
   padding: 9.6rem 0;
   background-color: #fff4e6;
+}
+
+.box-prototype {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3.2rem;
 }
 
 .profile-card {
@@ -464,7 +450,7 @@ a {
 .section-gallery {
   padding: 9.6rem 0;
 }
-/* Correction Bootstrap */
+/* Correction Bootstrap carousel */
 .carousel-inner {
   border-radius: 10px;
 }
@@ -494,6 +480,11 @@ a {
 
 .carousel-indicators button {
   border-radius: 3px;
+}
+
+.carousel-control-next:focus,
+.carousel-control-prev:focus {
+  box-shadow: 0 0 0 0.3rem #ffca82;
 }
 
 /* FEATURES */
@@ -572,14 +563,13 @@ a {
   justify-content: center;
 }
 
-/* FEADBACK */
+/* FEEDBACK */
 
 .section-feedback {
   padding: 9.6rem 0;
   background-image: url(../img/the-terminal-movie-feadback.webp);
   background-size: cover;
   background-position: top;
-  height: 70rem;
 }
 
 .section-feedback .heading-secondary {
@@ -590,6 +580,7 @@ a {
 .section-feedback p {
   font-size: 2.4rem;
   letter-spacing: 0.5px;
+  line-height: 1.3;
   color: #fff;
   width: 65%;
   margin-bottom: 1.6rem;
@@ -670,13 +661,13 @@ textarea::placeholder {
 
 /* FOOTER */
 
-footer {
+.footer {
   padding: 12.8rem 0;
   background-color: #222;
   margin-top: 9.8rem;
 }
 
-.grid-footer {
+.footer .container-1200 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 12.8rem;
