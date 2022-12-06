@@ -1,4 +1,4 @@
-// Make mobile navigation work
+// Make mobile navigation work (+)
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
@@ -7,9 +7,9 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-// Smooth scrolling animation
+// Smooth scrolling animation (+)
 
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll("main-nav-list a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -59,13 +59,3 @@ const obs = new IntersectionObserver(
 );
 
 obs.observe(sectionHeroEl);
-
-// Focus behavior correction (visual focus indicator)
-
-const navLink = document.querySelectorAll(".main-nav-link");
-
-navLink.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.preventDefault();
-  });
-});
