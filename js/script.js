@@ -1,4 +1,4 @@
-// Make mobile navigation work (+)
+// Make mobile navigation button work
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
@@ -7,9 +7,9 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-// Smooth scrolling animation (+)
+// Smooth scrolling animation
 
-const allLinks = document.querySelectorAll("main-nav-list a:link");
+const allLinks = document.querySelectorAll("ul.main-nav-list > li > a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {

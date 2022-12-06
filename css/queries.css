@@ -400,6 +400,7 @@
   .section-feedback .heading-secondary,
   .section-feedback .subheading {
     text-align: center;
+    color: #fff;
   }
 
   .section-feedback .heading-secondary,
@@ -415,13 +416,14 @@
 
   .feedback-form {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1.5fr 1fr;
     width: 85%;
     margin: auto;
   }
 
   .feedback-form div:last-child {
     grid-column: initial;
-    grid-row: initial;
+    grid-row: 3 / 4;
   }
 
   .footer {

@@ -128,7 +128,12 @@ svg {
 /* GENERAL focus */
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.3rem #ffca82;
+  box-shadow: 0 0 0 0.6rem #ff9505;
+}
+
+.nav-cta:focus,
+.btn-form:focus {
+  box-shadow: 0 0 0 0.6rem #aaa;
 }
 
 a {
@@ -167,8 +172,10 @@ a {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #444;
+  color: #555;
   font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
   transition: all 0.3s;
 }
 
@@ -479,11 +486,6 @@ a {
   border-radius: 3px;
 }
 
-.carousel-control-next:focus,
-.carousel-control-prev:focus {
-  box-shadow: 0 0 0 0.3rem #ffca82;
-}
-
 /* FEATURES */
 
 .section-features {
@@ -619,6 +621,7 @@ a {
 .btn-form {
   display: inline-block;
   font-size: 2rem;
+  font-weight: 700;
   letter-spacing: 0.6px;
   border-radius: 10px;
   border: none;
