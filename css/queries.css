@@ -17,6 +17,7 @@
     font-size: 3.6rem;
   }
 }
+
 /* BELOW 1200px */
 
 @media (max-width: 75em) {
@@ -46,6 +47,7 @@
 }
 
 /* BELOW 1040px */
+
 @media (max-width: 65em) {
   html {
     font-size: 50%;
@@ -93,7 +95,7 @@
 
   .profile-card {
     width: 276px;
-    height: 356px;
+    height: 372px;
   }
 
   .prototype-description {
@@ -286,12 +288,20 @@
 /* BELOW 544px till w-320px & h-568px (Apple iPhone 5, SE 1-st ed)*/
 
 @media (max-width: 34em) {
+  .section-hero {
+    padding: 2.4rem 0 8rem 0;
+  }
+
   .hero {
     gap: 3.2rem;
   }
 
-  .hero-tagline {
-    margin-bottom: 1.6rem;
+  .hero-tagline:first-child {
+    margin-bottom: 0;
+  }
+
+  .hero-tagline:not(:first-child) {
+    margin-bottom: 2.4rem;
   }
 
   .heading-primary {
@@ -347,7 +357,7 @@
   }
 
   .step-text-box span {
-    display: none;
+    font-size: 1.6rem;
   }
 
   .heading-tertiary {
@@ -364,7 +374,7 @@
 
   .carousel-control-next,
   .carousel-control-prev {
-    border: none;
+    border: none !important;
     width: 6.4rem !important;
     height: 6.4rem !important;
   }
@@ -386,6 +396,13 @@
   .carousel-control-next:focus,
   .carousel-control-prev:focus {
     box-shadow: none;
+  }
+
+  .carousel-indicators {
+    justify-content: space-around !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    margin-bottom: 0.6rem !important;
   }
 
   .section-feedback {
