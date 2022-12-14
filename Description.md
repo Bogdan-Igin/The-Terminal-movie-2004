@@ -12,7 +12,7 @@ Web Design | HTML | CSS | JavaScript | Bootstrap | Responsive Web Design | Site 
 
 02 Strong semantic HTML, building with logic block structure.
 
-03 Код содержит комментарии для ориентации и разделения по разделам.
+03 Code contains comments for orientation and sectioning.
 
 04 HTML techs: flex, grid, absolute position.
 
@@ -20,18 +20,18 @@ Web Design | HTML | CSS | JavaScript | Bootstrap | Responsive Web Design | Site 
 
 06 Castomized letter-spacing and line-height CSS property for easy reading texts.
 
-07 Использованы современные форматы изображений webp и svg.
+07 Used modern webp and svg image formats.
 
-08 Stiky menu, mobile menu. Smooth scrolling after using menu made with some JavaScript учитывая особенности Safary.
+08 Stiky menu, mobile menu. Smooth scrolling after using menu made with some JavaScript given the problem with Safari.
 
 09 Some animation is used for controls, image and cards.
 
-10 Bootstrap slider with castomized controls.
+10 Bootstrap slider with customized controls.
 
 11 Feedback form powered with emailjs.com backend tools.
 
-12 Castomized good visible focus for control elements (good ).
+12 Customized good visible focus for control elements (good ).
 
-13 Страница адаптирована под экраны до ширины 320px.
+13 The page is adapted for screens up to 320px wide (desktop first).
 
-14 Показатели SiteSpeed для desktop and mobile close to 100% (green color only).
+14 Показатели pagespeed.web.dev для desktop and mobile devices close to 100% (green color only).
