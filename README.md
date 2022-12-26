@@ -30,8 +30,8 @@ Web Design | HTML | CSS | JavaScript | Bootstrap | Responsive Web Design | Site 
 
 11 Feedback form powered with emailjs.com backend tools.
 
-12 Customized good visible focus for control elements (good ).
+12 Customized good visible focus for control elements.
 
 13 The page is adapted for screens up to 320px wide (desktop first).
 
-14 Indicators pagespeed.web.dev for desktop and mobile devices close to 100% (green color only).
+14 Indicators of pagespeed.web.dev for desktop and mobile devices close to 100% (green color only).
