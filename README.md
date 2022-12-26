@@ -34,4 +34,4 @@ Web Design | HTML | CSS | JavaScript | Bootstrap | Responsive Web Design | Site 
 
 13 The page is adapted for screens up to 320px wide (desktop first).
 
-14 Показатели pagespeed.web.dev для desktop and mobile devices close to 100% (green color only).
+14 Indicators pagespeed.web.dev for desktop and mobile devices close to 100% (green color only).
