@@ -1,5 +1,7 @@
 DESCRIPTION OF THE WEB-PROJECT THE TERMINAL MOVIE 2004.
 
+UPD 06.01.2026 It is not a portfolio code for now becouse it is not relevant for my current position and skills ))
+
 I created this page for my friends and my own pleasure, but it also shows my abilities (untill Nov 2022). The idea, design, technical implementation are mine).
 
 ///// Used techs and tools /////
